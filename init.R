@@ -1,7 +1,6 @@
 
-library(shiny)
-library(shinythemes)
-library(markdown)
+
+my_packages = c("shiny", "shinythemes", "markdown")
 
 install_if_missing = function(p) {
   if (p %in% rownames(installed.packages()) == FALSE) {
